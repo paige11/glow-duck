@@ -1,7 +1,5 @@
 body {
   background-image: url("flowers.jpg");
-  /*background-size: cover;
-  background-repeat: no-repeat;*/
 }
 
 #whole-lamp {
@@ -143,3 +141,6 @@ body {
   font-size: 50px;
   margin: -53px;
 }
+/*
+issues: z-index -1 means can't click chain any more, can't turn lights back on, wood floor?,
+clicking 'chain' div to right of lamp turns lamp off*/

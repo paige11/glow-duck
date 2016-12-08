@@ -1,11 +1,9 @@
-// var dark = false;
-
 function nightTime() {
-  // dark = true;
   chainYank();
   backgroundDark();
   lamppostBlack();
   duckGreen();
+  $('#chain').on('click', lightTime)
 }
 
 function chainYank() {
@@ -28,35 +26,30 @@ function duckGreen() {
   $('#duck-tail')[0].style.borderRightColor = "#abfd91";
 }
 
-// function lightTime() {
-//   console.log("working");
-//   backgroundRevert();
-//   lamppostRevert();
-//   duckRevert();
-//   dark = false;
-// }
+function lightTime() {
+  backgroundRevert();
+  lamppostRevert();
+  duckRevert();
+  $('#chain').on('click', nightTime)
+}
 
-// function backgroundRevert() {
-//   $('body')[0].style.backgroundColor = "white"
-// }
-//
-// function lamppostRevert() {
-//   $('#light-pole')[0].style.backgroundColor = "red";
-//   $('#light-base')[0].style.backgroundColor = "red";
-// }
-//
-// function duckRevert() {
-//   $('#duck-body')[0].style.backgroundColor = "yellow";
-//   $('#duck-head')[0].style.backgroundColor = "yellow";
-//   $('#duck-tail')[0].style.borderRightColor = "yellow";
-// }
+function backgroundRevert() {
+  $('body')[0].style.background = "url(flowers.jpg)";
+}
+
+function lamppostRevert() {
+  $('#light-pole')[0].style.backgroundColor = "red";
+  $('#light-base')[0].style.backgroundColor = "red";
+}
+
+function duckRevert() {
+  $('#duck-body')[0].style.backgroundColor = "yellow";
+  $('#duck-head')[0].style.backgroundColor = "yellow";
+  $('#duck-tail')[0].style.borderRightColor = "yellow";
+}
 
 function listenForPull() {
-  // if (dark === false) {
-    $('#chain').on('click', nightTime);
-  // } else {
-  //   $('#chain').on('click', lightTime);
-  // }
+  $('#chain').on('click', nightTime);
 }
 
 $(document).ready(function() {

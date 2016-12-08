@@ -1,0 +1,145 @@
+body {
+  background-image: url("flowers.jpg");
+  /*background-size: cover;
+  background-repeat: no-repeat;*/
+}
+
+#whole-lamp {
+  position: relative;
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+}
+
+.body-color {
+  background-color: yellow;
+}
+
+.glow {
+  background-color: #abfd91;
+}
+
+#darkness {
+  background-color: #333;
+}
+
+#duck {
+
+}
+
+#duck-head {
+  color: yellow;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  position: relative;
+  top: 35px;
+  left: 25px;
+  z-index: 1;
+}
+
+#duck-body {
+  color: yellow;
+  width: 200px;
+  height: 140px;
+  border-radius: 100px;
+  position: relative;
+  left: 10px;
+}
+
+#duck-tail {
+  height: 0;
+  width: 0;
+  border-top: 35px solid transparent;
+  border-right: 70px solid yellow;
+  border-bottom: 35px solid transparent;
+  border-radius: 40% 40% 0 0;
+  position: relative;
+  bottom: 160px;
+  left: 130px;
+}
+
+#bill {
+  position: relative;
+  width: 22px;
+  border-width: 15px 11px 0;
+  border-style: solid;
+  border-color: #fd5e05 transparent;
+  bottom: 225px;
+  left: 56px;
+  z-index: 1;
+}
+
+#bill:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -28px;
+  left: -14px;
+  border-width: 0 25px 15px;
+  border-style: solid;
+  border-color: transparent transparent #fd5e05;
+}
+
+#eyes {
+  position: relative;
+  left: 60px;
+}
+
+.eye {
+  width: 10px;
+	height: 20px;
+	background: black;
+	border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+#left-eye {
+  bottom: 280px;
+}
+
+#right-eye {
+  bottom: 300px;
+  left: 25px;
+}
+
+#light {
+  position: relative;
+  left: -150px;
+  top: -8px;
+}
+
+#light-pole {
+  width: 10px;
+  height: 310px;
+  background: red;
+  position: relative;
+  left: 250px;
+  top: -120px;
+  z-index: -1;
+}
+
+#light-base {
+  width: 100px;
+  height: 55px;
+  border-radius: 50%;
+  background: red;
+  position: relative;
+  bottom: 130px;
+  left: 207px;
+}
+
+#chain {
+  position: relative;
+  left: 260px;
+  top: -500px;
+  z-index: 2;
+}
+
+.ball {
+  color: dimgray;
+  font-size: 50px;
+  margin: -53px;
+}

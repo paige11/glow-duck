@@ -1,5 +1,5 @@
 body {
-  background-image: url("flowers.jpg");
+  background-image: url("prod_3150.jpg");
 }
 
 #whole-lamp {
@@ -112,7 +112,7 @@ body {
 #light-pole {
   width: 10px;
   height: 310px;
-  background: red;
+  background: lime;
   position: relative;
   left: 250px;
   top: -120px;
@@ -123,7 +123,7 @@ body {
   width: 100px;
   height: 55px;
   border-radius: 50%;
-  background: red;
+  background: lime;
   position: relative;
   bottom: 130px;
   left: 207px;
@@ -133,14 +133,13 @@ body {
   position: relative;
   left: 260px;
   top: -500px;
-  z-index: 2;
+  z-index: -1;
 }
 
 .ball {
-  color: dimgray;
+  color: lightgray;
   font-size: 50px;
   margin: -53px;
 }
 /*
-issues: z-index -1 means can't click chain any more, can't turn lights back on, wood floor?,
-clicking 'chain' div to right of lamp turns lamp off*/
+issues: z-index -1 means can't click chain any more, can't turn lights back on, floor?*/

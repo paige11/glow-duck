@@ -34,7 +34,7 @@ function lightTime() {
 }
 
 function backgroundRevert() {
-  $('body')[0].style.background = "url(flowers.jpg)";
+  $('body')[0].style.background = "url(prod_3150.jpg)";
 }
 
 function lamppostRevert() {
@@ -52,6 +52,4 @@ function listenForPull() {
   $('#chain').on('click', nightTime);
 }
 
-$(document).ready(function() {
-  listenForPull();
-})
+$(document).ready(listenForPull());

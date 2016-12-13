@@ -43,6 +43,7 @@ body {
   border-radius: 100px;
   position: relative;
   left: 10px;
+  z-index: 2;
 }
 
 #duck-tail {
@@ -112,7 +113,7 @@ body {
 #light-pole {
   width: 10px;
   height: 310px;
-  background: lime;
+  background: red;
   position: relative;
   left: 250px;
   top: -120px;
@@ -123,7 +124,7 @@ body {
   width: 100px;
   height: 55px;
   border-radius: 50%;
-  background: lime;
+  background: red;
   position: relative;
   bottom: 130px;
   left: 207px;
@@ -133,13 +134,11 @@ body {
   position: relative;
   left: 260px;
   top: -500px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .ball {
-  color: lightgray;
+  color: silver;
   font-size: 50px;
   margin: -53px;
 }
-/*
-issues: z-index -1 means can't click chain any more, can't turn lights back on, floor?*/
